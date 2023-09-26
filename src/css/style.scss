@@ -1,0 +1,42 @@
+$split-color:     #03dffc;
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../../assets/fonts/Montserrat/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../../assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    height: fit-content;
+    flex: 5;
+    color: white;
+    font-size: 2em;
+    font-family: "Montserrat", system-ui, sans-serif;
+}
+
+.title .colored{
+    font-family: "Montserrat-SemiBold", system-ui, sans-serif;
+    color: $split-color;
+}
+
+.Menu{
+    height: fit-content;
+    flex: 3;
+}
