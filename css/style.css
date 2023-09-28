@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fonts/Montserrat/Montserrat-Black.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+html{
+    height: fit-content;
+    width: 100%;
+}
+
+footer{
+    position: fixed;
+    padding: 1em;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: right;
+}
+
+footer span{
+    color: white;
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 12px;
+    margin-right: 4em;
+}
+
+body {
+    --main-color: #03dffc;
+    --perspective:     60rem;
+    --font-size:       2.5em;
+    --split-position:  49%;
+    --split-thickness: 4px;
+
+    font-family: "Montserrat-Bold", system-ui, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-kerning: normal;
+    -webkit-text-size-adjust: 100%;
+
+    height: fit-content;
+    flex-direction: column;
+    margin: 0;
+}
+
+.Menu{
+    height: fit-content;
+    flex: 3;
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+/*.container.home{*/
+/*    height: 100vh;*/
+/*    flex-direction: row;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    transform-style: preserve-3d;*/
+/*    transform: perspective(var(--perspective));*/
+/*    !*position: fixed;*!*/
+/*    justify-content: center;*/
+/*}*/
+
+.container{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    top: 0;
+    display: flex;
+}
+
+/* HOME */
+.title{
+    margin: auto;
+    text-align: left;
+    height: fit-content;
+    width: fit-content;
+    color: white;
+    font-size: 1.8em;
+    font-family: "Montserrat", system-ui, sans-serif;
+}
+
+.title h1{
+    margin-top: 0;
+    width: fit-content;
+}
+
+.title .colored{
+    font-family: "Montserrat-SemiBold", system-ui, sans-serif;
+    color: var(--main-color);
+}
+/* END HOME */
+
+/* PROJECTS */
+.container.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project{
+    height: calc(66vh/3);
+    margin: 1em 0;
+    display: flex;
+}
+
+.project .card{
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.project .card .img,
+.project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .25s;
+    z-index: 1;
+}
+
+.project:hover .card img{
+    transform: scale(1.1);
+}
+
+.project .desc,
+.project .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.project .filter {
+    background-color: black;
+    z-index: 2;
+    transition: 0.25s;
+}
+
+.project:hover .card .filter{
+    opacity: 0.9;
+}
+
+.project .desc {
+    z-index: 3;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.project:hover .card .desc{
+    opacity: 1;
+}
+
+.desc .stack{
+    display: flex;
+    flex-direction: row;
+}
+
+.desc .stack img{
+    width: 2em;
+    height: 2em;
+    object-position: center;
+    object-fit: cover;
+    margin-right: 1em;
+}
+
+.desc .content{
+    color: white;
+    font-family: "Montserrat", system-ui, sans-serif;
+    padding-top: 1em;
+    transition: 0.25s;
+    transform: translateY(1.5em);
+}
+
+.project:hover .card .desc .content{
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+.project-infos{
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title{
+    color: white;
+}
+
+.project-title h2{
+    margin: 0;
+    font-family: "Montserrat-SemiBold", system-ui, sans-serif;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+}
+
+.links a{
+    margin-right: 1.5em;
+    padding: 0.3em;
+    height: 1.5em;
+    width: 1.5em;
+    transition: all 0.25s;
+    border-radius: 0.2em;
+}
+
+.links img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.links a:hover{
+    transform: translateY(-10%);
+    /*background: linear-gradient(45deg, #6e5494 0%, #6e5494 50%, rgba(245, 245, 245, 0.6) 100%);*/
+    background: #6e5494;
+}
+
+.links a:hover img{
+    filter: invert(100%);
+}
+
+/* END PROJECTS */
