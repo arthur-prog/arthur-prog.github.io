@@ -153,6 +153,10 @@
 }
 
 @media (max-width: 768px) {
+    .container.skills{
+        min-height: fit-content;
+    }
+
     .container.skills .blocks{
         width: 70%;
     }
