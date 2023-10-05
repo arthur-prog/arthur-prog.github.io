@@ -1,7 +1,179 @@
-.container.skills .skills {
+.container.skills .blocks {
     border-radius: 0.5em;
     margin: auto;
-    padding: 10em;
-    background: rgba(255, 255, 255, 0.7);
+    height: 70%;
+    width: 50%;
+    position: relative;
+}
+
+.code{
+    position: absolute;
+}
+
+#code-1{
+    top: 10%;
+    left: 5%;
+    width: 40%;
+    z-index: 9;
+    filter: blur(2px);
+}
+
+#code-2{
+    top: 40%;
+    left: 40%;
+    width: 50%;
+    z-index: 8;
+    filter: blur(3px);
+}
+
+#code-3{
+    top: 70%;
+    left: 10%;
+    width: 50%;
+    z-index: 7;
+    filter: blur(4px);
+}
+
+#code-4{
+    top: 18%;
+    left: 46%;
+    width: 30%;
+    z-index: 6;
+    filter: blur(5px);
+}
+
+#code-5{
+    top: 30%;
+    left: 30%;
+    width: 40%;
+    z-index: 5;
+    filter: blur(6px);
+}
+
+
+.container.skills #skills {
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: fit-content;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translate(-50%, -50%);
+    transition: all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    padding: 0.75em;
+}
+
+#skills .row{
+    display: flex;
+}
+
+.skill{
+    position: inherit;
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.8em;
+    margin: 0.75em;
+    border-radius: 1em;
+    display: flex;
+    align-items: center;
+}
+
+.skill img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.skill p{
+    position: absolute;
+    color: white;
+    font-family: "Montserrat-SemiBold", system-ui, sans-serif;
+    font-size: 1.3em;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
     transition: all 0.25s;
+}
+
+.skill:hover p{
+    opacity: 1;
+}
+
+#js{
+    background: linear-gradient(-135deg, #F7DF1E, #f7ec91);
+}
+
+#html{
+    background: linear-gradient(-135deg, #ff5c29, #f89f83);
+}
+
+#css{
+    background: linear-gradient(-135deg, #0A74BD, #4fb7e7);
+}
+
+#nodejs{
+    background: linear-gradient(-135deg, #448A43, #9bdc7f);
+}
+
+#php{
+    background: linear-gradient(-135deg, #A776FF, #9BCAFF);
+}
+
+#symfony{
+    background: linear-gradient(-135deg, #3F1777, #962BF0);
+}
+
+#flutter{
+    background: white;
+}
+
+#firebase{
+    background: linear-gradient(-135deg, #0B9EE6, #85d0f5);
+}
+
+#react{
+    background: linear-gradient(-135deg, #1baeda, #61DAFB);
+}
+
+@media (max-width: 1200px) {
+    .skill{
+        width: 2em;
+        height: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .container.skills .blocks{
+        width: 70%;
+    }
+
+    .skill{
+        width: 1.5em;
+        height: 1.5em;
+        margin: 0.5em;
+    }
+
+    .skill p{
+        top: -25%;
+    }
+}
+
+@media (max-width: 550px) {
+    .skill{
+        width: 1.4em;
+        height: 1.4em;
+    }
+}
+
+@media (max-width: 450px) {
+    .skill{
+        width: 1.3em;
+        height: 1.3em;
+    }
 }

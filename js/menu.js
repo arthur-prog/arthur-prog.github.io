@@ -5,8 +5,8 @@ $( document ).ready(() => {
     let projectsMenuElt  = $('.Menu-list-item.projects');
     let skillsContainer = $('.container.skills');
     let skillsMenuElt  = $('.Menu-list-item.skills');
-    let contactContainer = $('.container.contact');
-    let contactMenuElt  = $('.Menu-list-item.contact');
+    let aboutContainer = $('.container.about');
+    let aboutMenuElt  = $('.Menu-list-item.about');
 
 
     homeMenuElt.click(() => {
@@ -24,8 +24,8 @@ $( document ).ready(() => {
             behavior: 'smooth'
         });
     });
-    contactMenuElt.click(() => {
-        contactContainer[0].scrollIntoView({
+    aboutMenuElt.click(() => {
+        aboutContainer[0].scrollIntoView({
             behavior: 'smooth'
         });
     });
@@ -51,9 +51,9 @@ $( document ).ready(() => {
             skillsContainer[0].getBoundingClientRect().top < screenHeight * 0.5){
             changeActiveMenu(skillsMenuElt[0]);
         }
-        if(contactContainer[0].getBoundingClientRect().top > -screenHeight * 0.1 &&
-            contactContainer[0].getBoundingClientRect().top < screenHeight * 0.5){
-            changeActiveMenu(contactMenuElt[0]);
+        if(aboutContainer[0].getBoundingClientRect().top > -screenHeight * 0.1 &&
+            aboutContainer[0].getBoundingClientRect().top < screenHeight * 0.5){
+            changeActiveMenu(aboutMenuElt[0]);
         }
     }
 

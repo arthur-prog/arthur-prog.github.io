@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*transform: rotateX(-10deg) rotateY(20deg);*/
     list-style: none;
+    padding: 0;
 }
 
 .Menu-list-item.active span{
@@ -64,7 +64,7 @@
 
 .Mask + .Mask {
     top: 48.9%;
-    height: 51.1%;
+    height: 51.9%;
 }
 
 .Mask + .Mask span {
@@ -85,4 +85,28 @@
 .Menu-list-item:hover:not(.active)::before,
 .Menu-list-item:active:not(.active)::before {
     transform: scale(1);
+}
+
+@media (max-width: 1400px) {
+    .Menu-list{
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Menu-list{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .Menu-list{
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 900px) {
+    .Menu-list{
+        font-size: 1.5em;
+    }
 }
