@@ -27,149 +27,171 @@
 }
 
 .line{
-    position: absolute;
-    width: 4px;
-    height: 250vh;
-    top: 0;
-    left: 20%;
-    background: rgba(255, 255, 255, 0);
-    overflow: hidden;
-    transform: rotate(45deg) translateY(-50%);
-}
-
-.line-2{
-    left: 30vw;
-}
-
-.line-3{
-    left: 40vw;
-}
-
-.line-4{
-    left: -10vw;
-}
-
-.line-5{
-    left: 60vw;
-}
-
-.line-6{
-    left: 0;
-}
-
-.line-7{
-    left: 10vw;
-}
-
-.line-8{
-    left: 45vw;
-}
-
-.line-9{
-    left: -20vw;
-}
-
-.line-10{
-    left: 80vw;
-}
-
-.line-11{
-    left: 25vw;
-}
-
-.line-12{
-    left: 15vw;
-}
-
-.line-13{
-    left: -15vw;
-}
-
-.line-14{
-    left: -25vw;
-}
-
-.line-15{
-    left: 5vw;
-}
-
-.line:after{
-    content: '';
     display: block;
     position: absolute;
     height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
+    width: 4px;
+    top: -20%;
+    left: 170%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--main-color) 75%, var(--main-color) 100%);
     animation: drop 5s 2s infinite;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    transform: rotate(45deg)
 }
 
-.line-2:after{
+.line-2{
+    left: 160%;
     animation: drop 4s 0s infinite;
-    animation-delay: 2s;
 }
 
-.line-3:after{
+.line-3{
+    left: 20%;
     animation: drop 5s 0.6s infinite;
 }
 
-.line-4:after{
+.line-4{
+    left: 30%;
     animation: drop 5s 3s infinite;
 }
 
-.line-5:after{
+.line-5{
+    left: 40%;
     animation: drop 4s 1s infinite;
 }
 
-.line-6:after{
+.line-6{
+    left: 50%;
     animation: drop 5s 0.2s infinite;
 }
 
-.line-7:after{
+.line-7{
+    left: 60%;
     animation: drop 6s 3.6s infinite;
 }
 
-.line-8:after{
+.line-8{
+    left: 70%;
     animation: drop 5s 2.2s infinite;
 }
 
-.line-9:after{
+.line-9{
+    left: 80%;
     animation: drop 4s 1.7s infinite;
 }
 
-.line-10:after{
+.line-10{
+    left: 90%;
     animation: drop 6s 2.7s infinite;
 }
 
-.line-11:after{
+.line-11{
+    left: 100%;
     animation: drop 6s 4.4s infinite;
 }
 
-.line-12:after{
+.line-12{
+    left: 110%;
     animation: drop 5s 3.2s infinite;
 }
 
-.line-13:after{
+.line-13{
+    left: 120%;
     animation: drop 4s 0.7s infinite;
 }
 
-.line-14:after{
+.line-14{
+    left: 130%;
     animation: drop 5s 1s infinite;
 }
 
-.line-15:after{
+.line-15{
+    left: 140%;
     animation: drop 6s 2.7s infinite;
+}
+
+.line-16{
+    left: 150%;
+    animation: drop 4s 1.9s infinite;
+}
+
+.line-17{
+    left: 180%;
+    animation: drop 5s 1.4s infinite;
+}
+
+.line-18{
+    left: 190%;
+    animation: drop 6s 4.8s infinite;
+}
+
+.line-19{
+    left: 200%;
+    animation: drop 5s 1.7s infinite;
+}
+
+.line-20{
+    left: 210%;
+    animation: drop 4s 3.7s infinite;
+}
+
+.line-21{
+    left: 220%;
+    animation: drop 6s 0.8s infinite;
+}
+
+.line-22{
+    left: 230%;
+    animation: drop 5s 4.7s infinite;
+}
+
+.line-23{
+    left: 240%;
+    animation: drop 4s 2.1s infinite;
+}
+
+.line-24{
+    left: 250%;
+    animation: drop 4s 0.3s infinite;
+}
+
+.line-25{
+    left: 260%;
+    animation: drop 6s 2.8s infinite;
+}
+
+.line-26{
+    left: 270%;
+    animation: drop 5s 3.7s infinite;
+}
+
+.line-27{
+    left: 280%;
+    animation: drop 5s 2.9s infinite;
+}
+
+.line-28{
+    left: 290%;
+    animation: drop 6s 4.7s infinite;
+}
+
+.line-29{
+    left: 300%;
+    animation: drop 4s 1.3s infinite;
+}
+
+.line-30{
+    left: 310%;
+    animation: drop 5s 2.7s infinite;
 }
 
 
 @keyframes drop{
     from{
-        top: -50%
+        transform: rotate(45deg) translateY(-50vh);
     }
     to{
-        top: 110%
+        transform: rotate(45deg) translateY(200vh);
     }
 }
+

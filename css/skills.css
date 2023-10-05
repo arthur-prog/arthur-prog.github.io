@@ -1,8 +1,12 @@
+.container.skills{
+    flex-direction: column;
+}
+
 .container.skills .blocks {
     border-radius: 0.5em;
     margin: auto;
-    height: 70%;
-    width: 50%;
+    height: 70vh;
+    width: 50vw;
     position: relative;
 }
 

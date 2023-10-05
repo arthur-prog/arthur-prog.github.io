@@ -1,5 +1,5 @@
 $(function(){
-    if(window.innerWidth > 768){
+    if(window.innerWidth > 768 && !window.matchMedia("(pointer: coarse)").matches){
         boxRollovers();
     }
 });
