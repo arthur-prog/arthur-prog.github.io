@@ -104,7 +104,7 @@
     width: 100%;
     transform: translateY(1.5em);
     box-sizing: border-box;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .project:hover .card .desc .content{
